@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weights</title>
+    <style>
+        body {
+            background-color: #e381cf;
+        }
+    </style>
+</head>
+<body>
+    <h1>Your weight in other planet</h1>
+    <p>In the planet your weight is lower than Mars or Jupiter</p>
+
+    <script>
+        const w_earth = 9.8;
+        const w_mars = 3.7;
+        const w_jupiter = 24.8;
+        let weight = 70;
+        let final_weight;
+        
+        // Calculating...
+        final_weight = (weight * w_mars)/w_earth;
+        final_weight = parseFloat(final_weight).toFixed(2);
+
+        document.write(`Your weight in mars is <strong>${final_weight} kg</strong>`);
+
+    </script>
+</body>
+</html>
