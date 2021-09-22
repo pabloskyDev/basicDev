@@ -48,6 +48,66 @@ while (l < lines)
 
 drawLines("#19ff40", 1, 499, 1, 1);
 
+for (l = 0; l < (lines/2); l++)
+{
+    yi = 10 * l;
+    xf = (lines * 10)/2 - yi; 
+    xi = (lines * 10)/2 - (10 * l);
+    yf = (lines * 10) - (10 * l);
+
+    drawLines("#eb6f42", 250, yi, xf, 250);
+    drawLines("#ebda42", 250, yi, 250 + (10 * l), 250);
+    drawLines("#c70404", xi, 250, 250, yf);
+    drawLines("#a938ff", 250 + (10 * l), 250, 250, yf);
+}
+
+drawLines("#eb6f42", 250, 1, 250, 250);
+drawLines("#eb6f42", 1, 250, 250, 250);
+drawLines("#ebda42", 250, 1, 250, 250);
+drawLines("#ebda42", 500, 250, 250, 250);
+drawLines("#c70404", 250, 250, 250, 500);
+drawLines("#c70404", 1, 251, 251, 251);
+drawLines("#a938ff", 251, 251, 251, 500);
+drawLines("#a938ff", 251, 251, 500, 251);
+
+l = 0;
+do
+{
+    l++;
+    yi = 10 * l;
+    xf = 200 - (10 * l);
+    xi = 200 - (10 * l);
+    yf = (lines * 10) - (10 * l);
+    drawLines("#eb6f42", 200, yi, xf, 200);
+    drawLines("#ebda42", 300, yi, 300 + yi, 200);
+    drawLines("#c70404", xi, 300, 200, yf);
+    drawLines("#a938ff", 300 + (10 * l), 300, 300, yf);
+}while (l < 20)
+
+drawLines("#eb6f42", 200, 1, 200, 200);
+drawLines("#ebda42", 300, 1, 300, 200);
+drawLines("#c70404", 200, 300, 200, 500);
+drawLines("#a938ff", 300, 300, 300, 500);
+
+l = 0;
+while (l < 30)
+{
+    l++;
+    yi = 5 * l;
+    xf = 150 - yi;
+    xi = 150 - (5 * l);
+    yf = (lines * 10) - (5 * l);
+    drawLines("#eb6f42", 150, yi, xf, 150);
+    drawLines("#ebda42", 350, yi, 350 + yi, 150);
+    drawLines("#c70404", xi, 350, 150, yf);
+    drawLines("#a938ff", 350 + (5 *l), 350, 350, yf);
+}
+
+drawLines("#eb6f42", 150, 1, 150, 150);
+drawLines("#ebda42", 350, 1, 350, 150);
+drawLines("#c70404", 150, 350, 150, 500);
+drawLines("#a938ff", 350, 350, 350, 500);
+
 function drawLines(color, xinicial, yinicial, xfinal, yfinal) 
 {
     // .beginPath es el método que ayuda a iniciar un trazo.
