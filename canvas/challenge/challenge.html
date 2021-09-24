@@ -13,13 +13,58 @@
     <main>
         <p>
             How many lines do you want?
-            <input type="number" name="nmr_lines" id="nmr_lines">
-            <input type="button" value="Show!!" id="sv_data">
+            <input type="number" name="nmr_lines" id="nmr_lines" maxlength="4">
         </p>
-        <canvas width="500" height="500" id="canvas_figure">
-        </canvas>
+        
+        <div>
+            <p>
+                Choose one figure and some colors:
+            </p>
+            <ul class="ul_figures">
+                <li>
+                    <input type="radio" name="option_figure" id="id_buterfly">
+                    <span for="id_buterfly">Butterfly</span>
+                </li>
+                <li>
+                    <input type="radio" name="option_figure" id="id_eye">
+                    <span for="id_eye">Eye</span>
+                </li>
+                <li>
+                    <input type="radio" name="option_figure" id="id_name">
+                    <span for="id_name">Juan Pablo</span>
+                </li>
+                <li>
+                    <input type="radio" name="option_figure" id="id_square">
+                    <span for="id_square">Square</span>
+                </li>
+                <li>
+                    <input type="radio" name="option_figure" id="id_star">
+                    <span for="id_star">Star</span>
+                </li>
+                <li>
+                    <input type="radio" name="option_figure" id="id_vortice">
+                    <span for="id_vortice">Vortice</span>
+                </li>
+            </ul>
+            <p>
+                <input type="button" value="Show" id="sv_data" class="btn_style success">
+            </p>
+        </div>
+        
+        <div id="div_principal">
+            <canvas width="300" height="300" id="canvas_figure">
+            </canvas>
+            <ul>
+                <li><input type="button" value="White" class="btn_style c_white"></li>
+                <li><input type="button" value="Black" class="btn_style c_black"></li>
+                <li><input type="button" value="Red" class="btn_style c_red"></li>
+                <li><input type="button" value="Yellow" class="btn_style c_yellow"></li>
+                <li><input type="button" value="All" class="btn_style c_all"></li>
+            </ul>
+
+        </div>
         <footer>
-            developed by &copy; PabloskyDev 
+            Developed by &copy; PabloskyDev 
         </footer>
     </main>
     <script src="./challenge.js"></script>
