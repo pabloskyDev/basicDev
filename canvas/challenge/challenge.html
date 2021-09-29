@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./challenge.css">
 </head>
 <body>
-    <h1>Challenging myself with this kind of excersices</h1>
+    <h1>Challenging myself with this kind of exercises</h1>
     
     <main>
         <p>
@@ -21,34 +21,16 @@
                 Choose one figure and some colors:
             </p>
             <ul class="ul_figures">
-                <li>
-                    <input type="radio" name="option_figure" id="id_buterfly">
-                    <span for="id_buterfly">Butterfly</span>
-                </li>
-                <li>
-                    <input type="radio" name="option_figure" id="id_eye">
-                    <span for="id_eye">Eye</span>
-                </li>
-                <li>
-                    <input type="radio" name="option_figure" id="id_name">
-                    <span for="id_name">Juan Pablo</span>
-                </li>
-                <li>
-                    <input type="radio" name="option_figure" id="id_square">
-                    <span for="id_square">Square</span>
-                </li>
-                <li>
-                    <input type="radio" name="option_figure" id="id_star">
-                    <span for="id_star">Star</span>
-                </li>
-                <li>
-                    <input type="radio" name="option_figure" id="id_vortice">
-                    <span for="id_vortice">Vortice</span>
-                </li>
+                <li><input type="button" value="Butterfly" id="id_buterfly" onclick="createFigure(this.id);"></li>
+                <li><input type="button" value="Eye" id="id_eye" onclick="createFigure(this.id);"></li>
+                <li><input type="button" value="Juan Pablo" id="id_name" onclick="createFigure(this.id);"></li>
+                <li><input type="button" value="Square" id="id_square" onclick="createFigure(this.id);"></li>
+                <li><input type="button" value="Star" id="id_star" onclick="createFigure(this.id);"></li>
+                <li><input type="button" value="Vortice" id="id_vortice" onclick="createFigure(this.id);"></li>
             </ul>
             <p>
-                <input type="button" value="Show" id="sv_data" class="btn_style success">
-                <input type="button" value="Clear" id="rm_data" class="btn_style c_red">
+                <!-- <input type="button" value="Refresh" id="sv_data" class="btn_style success"> -->
+                <!-- <input type="button" value="Clear" id="rm_data" class="btn_style c_red"> -->
             </p>
         </div>
         
@@ -56,11 +38,11 @@
             <canvas width="300" height="300" id="canvas_figure">
             </canvas>
             <ul>
-                <li><input type="button" value="White" class="btn_style c_white"></li>
-                <li><input type="button" value="Black" class="btn_style c_black"></li>
-                <li><input type="button" value="Red" class="btn_style c_red"></li>
-                <li><input type="button" value="Yellow" class="btn_style c_yellow"></li>
-                <li><input type="button" value="All" class="btn_style c_all"></li>
+                <li><input type="button" value="White" class="btn_style c_white" onclick="colorCanvas(this.value);"></li>
+                <li><input type="button" value="Orange" class="btn_style c_orange" onclick="colorCanvas(this.value);"></li>
+                <li><input type="button" value="Red" class="btn_style c_red" onclick="colorCanvas(this.value);"></li>
+                <li><input type="button" value="Yellow" class="btn_style c_yellow" onclick="colorCanvas(this.value);"></li>
+                <li><input type="button" value="All" class="btn_style c_all" onclick="colorCanvas(this.value);"></li>
             </ul>
 
         </div>
