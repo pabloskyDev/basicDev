@@ -265,7 +265,7 @@ function flowerByClick(colorFlower)
 
     let lines = parseInt(nmr_lines.value);
     let l = 0;
-    let coord_1, coord_2, coord_3, coord_4, coord_5, coord_6, coord_7, coord_8;
+    let coord_1, coord_2, coord_3, coord_4, coord_5, coord_6, coord_7;
     let space = width_canvas / lines;
     let width_middle = width_canvas/2;
     let middle_little = width_middle/2;
@@ -306,6 +306,7 @@ function flowerByClick(colorFlower)
         coord_4 = middle_little + (space * $i);
         coord_5 = width_middle + (space * $i);
         coord_6 = middle_bigger + (space * $i);
+        coord_7 = middle_bigger - (space * $i);
 
         if(coord_1 > 0 && coord_1 < (middle_little + 1))
         {
@@ -340,11 +341,16 @@ function flowerByClick(colorFlower)
             drawCanvasLines(color_figures, middle_little, middle_bigger, 1, coord_6);
             drawCanvasLines(color_figures, middle_little, middle_bigger, 1, coord_5);
             drawCanvasLines(color_figures, middle_little, middle_bigger, coord_1, width_middle);
+
+            // width_middle flower
+            drawCanvasLines(color_figures, coord_2, width_middle, width_middle, coord_4);
+            drawCanvasLines(color_figures, coord_5, width_middle, width_middle, coord_4);
+            drawCanvasLines(color_figures, coord_2, width_middle, width_middle, coord_7);
+            drawCanvasLines(color_figures, coord_5, width_middle, width_middle, coord_7);
+
         }
         colorFlower == "All" ? color_figures = colorRandom() : color_figures;
     }
-
-
 }
 
 
