@@ -1,7 +1,5 @@
 const nmr_lines = document.getElementById("nmr_lines");
 let color_figures = "#ffffff";
-// const btn_clear = document.getElementById("rm_data");
-// btn_clear.addEventListener("click", clearCanvas);
 
 const c = document.getElementById("canvas_figure");
 const canvas = c.getContext("2d");

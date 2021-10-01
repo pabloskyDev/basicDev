@@ -1,24 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
-
 * {
     padding: 0px;
     margin: 0px;
     list-style-type: none;
-    font-family: 'Gowun Dodum', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: #ffffff;
     cursor: pointer;
 }
 
 body {
     min-height: 100vh;
-    /* background: linear-gradient(180deg, #000000, #fc5f04); */
-    background: #000000;
+    background-color: #000000;
+    background-image: url("./img/red_moon.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 h1 {
     text-align: center;
     padding: 10px;
-    color: #c45f25;
+    color: #800e0e;
 }
 
 main {
@@ -43,7 +43,7 @@ main p input[type=number]{
     cursor: initial;
 }
 
-#canvas_figure {margin: 15px;}
+#canvas_figure {margin: 15px; background-color: #000000;}
 
 #div_principal {
     display: inline-flex;
@@ -62,7 +62,7 @@ main p input[type=number]{
     padding: 5px;
     border: 1px solid #000000;
     border-radius: 5px;
-    box-shadow: 2px 2px 10px 2px rgba(231, 226, 226, 0.5);
+    box-shadow: 5px 5px 10px 5px rgba(141, 4, 4, 0.5);
 }
 
 .ul_figures {
@@ -76,11 +76,11 @@ main p input[type=number]{
     margin: 1px;
     border: 0px;
     border-radius: 5px;
-    background: linear-gradient(180deg, #000000, #fc5f04);
+    background: linear-gradient(180deg, #000000, #800e0e);
 }
 
 .ul_figures input:hover{
-    background: linear-gradient(180deg, #3d3b3b, #c45f25);
+    background: linear-gradient(180deg, #3d3b3b, #800e0e88);
     border-radius: 5px;
 }
 
@@ -91,23 +91,20 @@ main p input[type=number]{
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    box-shadow: 2px 2px 5px 1px rgba(231, 226, 226, 0.5);
+    box-shadow: 2px 2px 5px 1px rgba(196, 196, 196, 0.5);
 }
 
-.success {background-color: #ff9800; color:#ffffff} /* Orange */
-.success:hover {background: #e68a00;}
-
 .c_white {background-color: #ffffff;}
-.c_white:hover {background: #dad6d1;}
+.c_white:hover {background: #dad6d1be;}
 
 .c_orange {background-color: #fc5f04; color: #000000;}
-.c_orange:hover {background: #e68a00;}
+.c_orange:hover {background: #e68a0073;}
 
 .c_red {background-color: #ff0000; color: #ffffff;}
-.c_red:hover {background: #d11818;}
+.c_red:hover {background: #d118187c;}
 
 .c_yellow {background-color: #ffd900; color: #000000;}
-.c_yellow:hover {background: #ffee00a2;}
+.c_yellow:hover {background: #ffee0059;}
 
 .c_all {background: linear-gradient(45deg, #000000, #ff0000, #fff000, #fc5f04, #ffffff); color: #000000;}
-.c_all:hover {background: linear-gradient(45deg, #1a1919, #d11818, #ffee00a2, #e68a00, #dad6d1);}
+.c_all:hover {background: linear-gradient(45deg, #1a191973, #d1181865, #ffee00a2, #e68a0062, #dad6d149);}
