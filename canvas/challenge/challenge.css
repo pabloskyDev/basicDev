@@ -71,6 +71,7 @@ main p input[type=number]{
     margin: 2px;
 }
 .ul_figures input{
+    color: #ffffff;
     padding: 10px;
     width: 100px;
     margin: 1px;
