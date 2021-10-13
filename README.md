@@ -7,4 +7,6 @@ This is a repository about basic skills as frontend developer.
 - Maybe the code can improve a lot, but right now I'm just doing practices.
 - The logic about this is easy to understand.
 
-#### Developed by PabloskyDev 
+(If you want to download this repository you are free to do it)
+
++ Developed by PabloskyDev 
