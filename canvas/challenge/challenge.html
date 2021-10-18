@@ -15,8 +15,9 @@
     <main>
         <p>
             How many lines do you want?
-            <input type="number" name="nmr_lines" id="nmr_lines" maxlength="4">
+            <input type="text" name="nmr_lines" id="nmr_lines" maxlength="3" onkeypress="return validateNumbers(event);">
         </p>
+        <p id="lbl_error_msg"></p>
         
         <div>
             <p>

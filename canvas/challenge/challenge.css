@@ -36,11 +36,16 @@ main input{
     font-weight: bold;
 }
 
-main p input[type=number]{
+main p input[type=text]{
     color: #000000;
     font-weight: bold;
     width: 50px;
     cursor: initial;
+}
+
+#lbl_error_msg{
+    color: #800e0e;
+    font-size: 18px;
 }
 
 #canvas_figure {margin: 15px; background-color: #000000;}

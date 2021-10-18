@@ -160,6 +160,29 @@ function colorRandom()
 }
 
 /**
+ * @function validateNumbers Validar que los valores del input sean todos numericos
+ * @param e Recibe el evento
+ * @author PabloskyDev
+ */
+function validateNumbers(e)
+{
+    const keyCode = e.keyCode || e.which;
+    let errorMsg = document.getElementById("lbl_error_msg");
+    errorMsg.innerHTML = "";
+
+    // Regex que solo recibe números positivos o decimales.
+    let pattern = /^[+]?([0-9]+(?:[\.][0-9]*)?|\.[0-9]+)$/;
+
+    let isValid = pattern.test(String.fromCharCode(keyCode));
+    if(!isValid)
+    {
+        errorMsg.innerHTML = "Invalid attempt, it's only valid number values";
+    }
+    return isValid;
+
+}
+
+/**
  * @function squareByClick Forma un cuadrado
  * @param color Recibe el color de las lineas que pintan la figura
  * @author PabloskyDev
