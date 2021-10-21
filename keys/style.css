@@ -1,0 +1,19 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    text-align: center;
+    margin: 5px;
+}
