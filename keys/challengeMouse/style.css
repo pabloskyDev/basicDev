@@ -1,0 +1,10 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+canvas {
+    border: #000000 2px solid;
+    border-radius: 5px;
+}
